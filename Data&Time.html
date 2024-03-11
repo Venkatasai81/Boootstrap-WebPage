@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Get Date by Using Date() method</h2>
+
+<!-- by using onckick event & dom function (id).innerHTML -->
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo">Time and Date</p>
+
+<!-- Hide the text -->
+<p id="hide">If you Button click the text will hide by using ().stytle.display = "none"</p>
+<button type="button"
+onclick="document.getElementById('hide').style.display = 'none'">
+Hide it</button>
+<br>
+<button type="button"
+onclick="document.getElementById('hide').style.fontSize = '22px'">
+FontSize Change by 22px</button>
+<br>
+<p id="displaynone" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('displaynone').style.display='block'">Retrive by click</button>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Js Numbers</h2>
+
+<p>Numbers can be written with, or without decimals:</p>
+
+<p id="demo"></p>
+
+<script>
+let x1 = 34.00;
+let x2 = 34;
+let x3 = 3.14;
+let x4= 123e5;
+let x5= 123e-5;
+// Js arrays
+const cars = ["KIA","Volvo","BMW"];
+
+// Js Objects
+const person = {
+  firstName : "Venkata",
+  lastName  : "Sai",
+  age     : 22,
+  eyeColor  : "brown",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+
+document.getElementById("demo").innerHTML =
+x1 + "<br>" + x2 + "<br>" + x3 + "<br>" + x4 + "<br>" + "<hr>" + cars[2]+"<hr>" + person.age  +"  "+ person["firstName"]+ "<br>" +typeof person ;
+</script>
+
+</body>
+</html>
